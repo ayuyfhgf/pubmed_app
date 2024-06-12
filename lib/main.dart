@@ -55,6 +55,9 @@ class _ArticleListScreenState extends State<ArticleListScreen> {
             padding: const EdgeInsets.all(8.0),
             child: TextField(
               controller: _keywordController,
+              onChanged: (val) {
+                setState(() {});
+              },
               decoration: InputDecoration(
                 labelText: 'Search Keyword',
                 suffixIcon: IconButton(
